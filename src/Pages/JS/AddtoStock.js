@@ -25,20 +25,22 @@ export default function Add(){
                     <div className="ua-left">
                         <div className="scan">
                             <div className="scan-top"><button className="scan-button" type="button">SCAN Item</button></div>
-                            <p className="scan-text" id="scanned">ITEM SCANNED:</p>
-                            <div className="output-value"></div>
+                            <div className="scan-output">
+                                <p className="scan-text" id="scanned">ITEM SCANNED:</p>
+                                <div className="scan-text"></div>
+                            </div>
                             <div className="confirmation">
-                                <button className="scan-button" type="button">Confirm</button>
                                 <button className="scan-button" type="button">Try Again</button>
                             </div>
                             <div className="manual-input">
                                 <input className="input" name="item" placeholder="Item"></input>
-                                <input className="input" name="qty" placeholder="Quantity"></input>
                                 <button type="button" className="scan-button">Input Manually</button>
                             </div>
-
-
-
+                            <div className="confirmation">
+                                <input name="qty" placeholder="Quantity"></input>
+                                <button className="scan-button" type="button">Confirm</button>
+                            </div>
+                            
                         </div>
                     </div>
                     <div className="ua-right">

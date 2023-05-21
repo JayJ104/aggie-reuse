@@ -76,6 +76,13 @@
     text-align: center;
 }
 
+.scan-output{
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    height: 15vh;
+}
+
 .scan-text{
     padding-top: 3vh;
     font-family: 'JejuGothic';
@@ -83,22 +90,20 @@
     font-weight: 400;
     font-size: 3vh;
     text-align: center;
-}
-
-.output-value{
-    height: 15vh;
+    width: 25vw;
 }
 
 .confirmation{
     display: flex;
     flex-direction: row;
     align-content: center;
+    padding-top: 3vh;
     padding-inline: 10vw;
     gap: 3vw;
 }
 
 .manual-input{
-    padding-top: 5vh;
+    padding-top: 2.5vh;
     display: flex;
     flex-direction: row;
     gap: 2vw;
@@ -107,6 +112,7 @@
 .input{
     width: 15vw;
 }
+
 
 .ua-right{
     width: 33vw;
