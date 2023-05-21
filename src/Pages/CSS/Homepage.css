@@ -1,0 +1,76 @@
+.home{
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+
+    background: #F7F7F7;
+    border-bottom: 3px solid #591D1D;
+}
+
+.logo{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: auto;
+
+}
+.navbar-left{
+    position: relative;
+    padding-left: 5%;
+    height: 100%;
+    width: 20%;
+    align-items: center;
+}
+
+.header-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    padding-right: 5%;
+}
+
+.storeName{
+    position: relative;
+    font-family: 'Inria Sans';
+    font-style:normal;
+    height: 6vh;
+    font-weight: 700;
+    font-size: 6vh;
+    text-align: center;
+    margin: 0%;
+    color: #591D1D;
+}
+
+.ASUCD{
+    position: relative;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vh;
+    text-align: center;
+
+    padding-top: 2.5%;
+    margin: 0%;
+    color: #591D1D;
+}
+
+.body{
+    position: relative;
+    background-color: #DF8D8D;
+    height: 85vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
