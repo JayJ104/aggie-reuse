@@ -32,7 +32,6 @@ ftp_client.get('/home/pi/Pictures/picture.jpg',image_save_path)
 
 ftp_client.close()
 
-#image_path = "./Data/TrainingData/longsleeve/0a671f9d-d105-4ec9-8642-f4f228f8a90f.jpg"
 image_path = image_save_path
 
 # Load the pre-trained model
@@ -58,4 +57,5 @@ def predict_image(image_path, model):
 class_list = ["dress","hat", "longsleeve", "outwear", "pants", "shirt", "shoes", "shorts", "skirt"]
 # Run the image through the model
 predicted_class = predict_image(image_path, model)
+
 print("The shown shirt is", class_list[predicted_class])
