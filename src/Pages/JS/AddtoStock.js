@@ -44,7 +44,7 @@ export default function Add(){
                             </div>
                             <div className="scan-output">
                                 <p className="scan-text" id="scanned">ITEM SCANNED:</p>
-                                <div className="scan-text"> shirt</div>
+                                <div className="scan-text">Sshirt</div>
                              
                             </div>
                             <div className="confirmation">
