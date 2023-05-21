@@ -7,6 +7,13 @@ import { useNavigate } from "react-router-dom";
 //frontend file-- dynamic display
 //add drop downs
 
+function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}
 export default function Add(){
     const navigate = useNavigate();
     return(
@@ -32,10 +39,12 @@ export default function Add(){
                     <div className="ua-left">
                         <div className="scan">
                             <div className="scan-top">
-                                <button className="scan-button" type="button">SCAN Item</button>
+                                <button onclick="unhide()" className="scan-button" type="button">SCAN Item</button>
+                                
                             </div>
                             <div className="scan-output">
                                 <p className="scan-text" id="scanned">ITEM SCANNED:</p>
+                                <div className="scan-text"> shirt</div>
                              
                             </div>
                             <div className="confirmation">
