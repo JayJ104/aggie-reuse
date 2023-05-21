@@ -1,11 +1,14 @@
 import React from "react";
 import "../CSS/AddtoStock.css"
 import Logo from '../../AggieReuse-additional-color.png'; 
-import runPythonProgram from "../../api/jsToPython";
+import { useNavigate } from "react-router-dom";
+
+
 //frontend file-- dynamic display
 //add drop downs
 
 export default function Add(){
+    const navigate = useNavigate();
     return(
         <div className="addPage">
             <div className="header">
@@ -27,7 +30,7 @@ export default function Add(){
                     <div className="ua-left">
                         <div className="scan">
                             <div className="scan-top">
-                                <button onClick = {runPythonProgram} className="scan-button" type="button">SCAN Item</button>
+                                <button className="scan-button" type="button">SCAN Item</button>
                             </div>
                             <div className="scan-output">
                                 <p className="scan-text" id="scanned">ITEM SCANNED:</p>
@@ -50,7 +53,7 @@ export default function Add(){
                     <div className="ua-right">
                         <div className="itemList"></div>
                         <div className="button-container">
-                            <button className="finish" type="button">FINISH</button>
+                            <button onClick={() => navigate("/")} className="finish" type="button">FINISH</button>
                             </div>
                     </div>
                 </div>
