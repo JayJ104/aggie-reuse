@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {Routes, Route} from 'react-router-dom';
+import React, { Component }  from 'react';
 
 import Homepage from './Pages/JS/Homepage';
 import Add from './Pages/JS/AddtoStock';

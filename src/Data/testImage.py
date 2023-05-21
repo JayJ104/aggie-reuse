@@ -24,7 +24,7 @@ ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
 ssh_client.connect(hostname=HOSTNAME, username=USERNAME, password=PASSWORD)        
 
-stdin, stdout, stderr = ssh_client.exec_command("raspistill -o /home/pi/Pictures/picture.jpg -w 224 -h 224")   # capture a photo using raspistill
+stdin, stdout, stderr = ssh_client.exec_command("raspistill -o /home/pi/Pictures/picture.jpg -w 450 -h 450 -vf")   # capture a photo using raspistill
 
 ftp_client=ssh_client.open_sftp()
 time.sleep(7)
@@ -63,3 +63,9 @@ predicted_class = predict_image(image_path, model)
 output_string = class_list[predicted_class]
 
 print(output_string)
+
+text_file_path = "./src/Data/output.txt"
+
+with open(text_file_path, 'w') as file:
+    # Write the text to the file
+    file.write(output_string)

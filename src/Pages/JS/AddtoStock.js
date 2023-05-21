@@ -17,6 +17,7 @@ export default function Add(){
                     <p className="ASUCD">ASUCD</p>
                 </div>
             </div>
+            <body>
             <div className="add-body">
                 <div className="rd-container">
                     <div className="rd-box">
@@ -38,12 +39,13 @@ export default function Add(){
                             </div>
                             <div className="manual-input">
                                 <input className="input" name="item" placeholder="Item"></input>
-                                <button type="button" className="scan-button">Input Manually</button>
+                                <button  type="button" className="scan-button">Input Manually</button>
                             </div>
                             <div className="confirmation">
                                 <input name="qty" placeholder="Quantity"></input>
-                                <button className="scan-button" type="button">Confirm</button>
+                                <button onclick= "addItem()" className="scan-button" type="button">Confirm</button>
                             </div>
+                            
                             
                         </div>
                     </div>
@@ -55,6 +57,7 @@ export default function Add(){
                     </div>
                 </div>
             </div>
+            </body>
         </div>
     )
 }

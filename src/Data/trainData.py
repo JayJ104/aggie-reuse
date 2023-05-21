@@ -68,7 +68,7 @@ model.compile(
 model.fit(
     train_data,
     validation_data=val_data,
-    epochs=5
+    epochs=10
 )
 
 model.save('./src/Data/TrainedModel')
