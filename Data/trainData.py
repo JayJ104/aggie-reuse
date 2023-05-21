@@ -72,5 +72,3 @@ model.fit(
 )
 
 model.save('./Data/TrainedModel')
-
-model.summary()
