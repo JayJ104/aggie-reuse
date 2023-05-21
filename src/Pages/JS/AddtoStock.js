@@ -1,7 +1,7 @@
 import React from "react";
 import "../CSS/AddtoStock.css"
 import Logo from '../../AggieReuse-additional-color.png'; 
-import runPythonProgram from "../../api/jsToPython";
+//import runPythonProgram from "../../api/jsToPython";
 //frontend file-- dynamic display
 //add drop downs
 
@@ -27,7 +27,7 @@ export default function Add(){
                     <div className="ua-left">
                         <div className="scan">
                             <div className="scan-top">
-                                <button onClick = {runPythonProgram} className="scan-button" type="button">SCAN Item</button>
+                                <button className="scan-button" type="button">SCAN Item</button>
                             </div>
                             <div className="scan-output">
                                 <p className="scan-text" id="scanned">ITEM SCANNED:</p>
