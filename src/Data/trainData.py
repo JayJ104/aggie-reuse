@@ -10,7 +10,7 @@ import numpy as np
 
 
 # Define the dataset directory path
-dataset_dir = './Data/TrainingData'
+dataset_dir = './src/Data/TrainingData'
 
 # Define the batch size for training
 batch_size = 32
@@ -68,7 +68,7 @@ model.compile(
 model.fit(
     train_data,
     validation_data=val_data,
-    epochs=10
+    epochs=5
 )
 
-model.save('./Data/TrainedModel')
+model.save('./src/Data/TrainedModel')
