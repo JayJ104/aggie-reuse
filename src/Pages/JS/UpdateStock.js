@@ -1,10 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../CSS/UpdateStock.css"
+
 import Logo from '../../AggieReuse-additional-color.png';
 
 //add counter, dynamic display
 
 export default function UpdateStock(){
+    const navigate = useNavigate();
     return(
         <div className="checkout-home">
             <div className="header">
@@ -53,6 +56,7 @@ export default function UpdateStock(){
                         <div className="itemList"></div>
                         <div className="button-container">
                             <button className="finish" type="button">FINISH</button>
+                            <button onClick = {() => navigate("/")} className="finish" type = "button">FINISH</button>
                             </div>
                     </div>
                 </div>                
