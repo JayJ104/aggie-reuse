@@ -15,7 +15,39 @@ export default function Add(){
                     <p className="ASUCD">ASUCD</p>
                 </div>
             </div>
-            <div className="body">
+            <div className="add-body">
+                <div className="rd-container">
+                    <div className="rd-box">
+                        <p className="rd-text">Record Donation:</p>
+                    </div>
+                </div>
+                <div className="user-area">
+                    <div className="ua-left">
+                        <div className="scan">
+                            <div className="scan-top"><button className="scan-button" type="button">SCAN Item</button></div>
+                            <p className="scan-text" id="scanned">ITEM SCANNED:</p>
+                            <div className="output-value"></div>
+                            <div className="confirmation">
+                                <button className="scan-button" type="button">Confirm</button>
+                                <button className="scan-button" type="button">Try Again</button>
+                            </div>
+                            <div className="manual-input">
+                                <input className="input" name="item" placeholder="Item"></input>
+                                <input className="input" name="qty" placeholder="Quantity"></input>
+                                <button type="button" className="scan-button">Input Manually</button>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div className="ua-right">
+                        <div className="itemList"></div>
+                        <div className="button-container">
+                            <button className="finish" type="button">FINISH</button>
+                            </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
