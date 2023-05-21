@@ -1,0 +1,134 @@
+.addPage{
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-body{
+    position: relative;
+    background-color: #DF8D8D;
+    height: 85vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+
+.rd-container{
+    width: 100vw;
+    height: 10vh;
+    
+}
+
+.rd-box{
+    margin-left: 8vw;
+    font-family: 'JejuGothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4vh;
+    text-align: center;
+    background-color: #311A1A;
+    width: 30vw;
+    height: 5vh;
+}
+
+.rd-text{
+    color: #F7F7F7;
+}
+
+.user-area{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.ua-left{
+    width: 67vw;
+    height: 70vh;
+}
+
+.scan-top{
+    padding-top: 5vh;
+}
+
+.scan{
+    height: 60vh;
+    width: 60vw;
+    margin-left: 3.5vw;
+    background-color: #D9D9D9;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.scan-button{
+    width: 20vw;
+    height: 5vh;
+    background: #D9D9D9;
+    font-family: 'JejuGothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vh;
+    text-align: center;
+}
+
+.scan-text{
+    padding-top: 3vh;
+    font-family: 'JejuGothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vh;
+    text-align: center;
+}
+
+.output-value{
+    height: 15vh;
+}
+
+.confirmation{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding-inline: 10vw;
+    gap: 3vw;
+}
+
+.manual-input{
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.input{
+    width: 15vw;
+}
+
+.ua-right{
+    width: 33vw;
+    height: 70vh;
+}
+
+.itemList{
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    margin-right: 1.5vw;
+    width: 30vw;
+    height: 50vh;
+    background-color: #D9D9D9;
+}
+
+.finish{
+    width: 30vw;
+    height: 5vh;
+    background: #D9D9D9;
+    font-family: 'JejuGothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vh;
+    text-align: center;
+}

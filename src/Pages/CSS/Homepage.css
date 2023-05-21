@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .header{
     box-sizing: border-box;
     position: relative;
@@ -64,7 +65,7 @@
     color: #591D1D;
 }
 
-.body{
+.home-body{
     position: relative;
     background-color: #DF8D8D;
     height: 85vh;
