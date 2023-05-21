@@ -54,7 +54,7 @@ def predict_image(image_path, model):
     predicted_class = np.argmax(predictions[0])
     return predicted_class
 
-class_list = ["dress","hat", "longsleeve", "outwear", "pants", "shirt", "shoes", "shorts", "skirt"]
+class_list = ["dress","hat", "long-sleeve", "jacket", "pants", "shirt", "shoes", "shorts", "skirt"]
 # Run the image through the model
 predicted_class = predict_image(image_path, model)
 
