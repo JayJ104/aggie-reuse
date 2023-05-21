@@ -16,7 +16,7 @@ export default function Homepage(){
                     <p className="ASUCD">ASUCD</p>
                 </div>
             </div>
-            <div className="body">
+            <div className="home-body">
                 <button className="button" type="button">Record Donation
                 </button>
                 <button className="button" type="button">Start Checkout</button>
