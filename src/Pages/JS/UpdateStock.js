@@ -1,13 +1,19 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "../CSS/UpdateStock.css"
-
 import Logo from '../../AggieReuse-additional-color.png';
+import { useNavigate } from "react-router-dom";
+
 
 //add counter, dynamic display
-
-export default function UpdateStock(){
+export default function UpdateStock() {
     const navigate = useNavigate();
+    const [selectedItem, setSelectedItem] = useState(""); // State to store the selected item
+  
+    const handleSelectChange = (event) => {
+      setSelectedItem(event.target.value); // Update the selected item in state
+    };
+
+
     return(
         <div className="checkout-home">
             <div className="header">
