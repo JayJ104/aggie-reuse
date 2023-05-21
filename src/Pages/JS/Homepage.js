@@ -3,6 +3,9 @@ import "../CSS/Homepage.css"
 import { useNavigate } from "react-router-dom";
 import Logo from '../../AggieReuse-additional-color.png'; 
 
+//link record donation and start checkout pages
+
+
 export default function Homepage(){
     const navigate = useNavigate();
     return(

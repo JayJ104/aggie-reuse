@@ -2,6 +2,8 @@ import React from "react";
 import "../CSS/UpdateStock.css"
 import Logo from '../../AggieReuse-additional-color.png';
 
+//add counter, dynamic display
+
 export default function UpdateStock(){
     return(
         <div className="checkout-home">
