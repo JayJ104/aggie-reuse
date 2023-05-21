@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+## Inspiration
+When we went to go thrift-shopping at the Aggie Reuse Store, we noticed how tedious and time-consuming of a process checking-in and checking-out the items out of the store was.  As CS students, we took it upon ourselves to make the process for the volunteers simpler. Our project aims to reduce the time and effort required for manual data entry, help improve accuracy by minimizing human error, and provide real-time visibility into item availability and stock.
+## What it does
+The website allows user to do two things: Record Donations and Checkout Customers. For recording new stock that come in through donations, our hardware component to capture an image of an item. The image is classified into the clothing categories using a multiclass image classification machine learning algorithm that we trained and is added to the database. For checking out custormers, we offer a carousel of items with a drop-down menu of quantity for category and all categories changed are automatically updated in the database.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How we built it
+We started by using a Raspberry Pi with the intention of performing the machine learning, image classification as well as the database management system all hosted on the Pi. We quickly realized that doing all these on the Raspberry Pi would be beyond its capabilities. So, with the absence of an external webcam, we moved to using the Raspberry Pi only to take the photos and then send them to a computer where the local machine will take it into an image classifier that runs on a machine learning model that we trained using TensorFlow Keras and run on a combination of datasets that we collected. While we were building the ML system, we were simultaneously working on the front end systems to take the output for the Image Classification and allow the Volunteer to enter information into their database with ease. We built  this using React JS.
+Our Machine learning model has a 55% accuracy on Test Data, and a 95% accuracy rate on Training Data
 
-## Available Scripts
+## Challenges we ran into
+As beginners, it was hard for us to code complex ML algorithms and design functional web components. We were also unable to implement the backend due to issues with the NextJS server. We also ran into issues with react for routing and navigation. We were also unable to communicate between the ML program and Front End.  We attempted to use Google API for the backend, but were unable to get this to work in the required timeframe. 
 
-In the project directory, you can run:
+## Accomplishments that we're proud of
+We are proud of what we were able to make in the 24 hours allotted to us, given that it is our first hackathon and we came into this little experience
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## What we learned
+We learned how to setup frontend and backend servers. We learned how to implement multi class image classification algorithms. We also learned to prototype on Figma.
+## What's next for Inventory Tracking System for Aggie Reuse Store
+Finish the Backend, Improve machine learning model by adding more data. combine the front end and back end.
