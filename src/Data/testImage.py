@@ -15,7 +15,7 @@ HOSTNAME = "sandeeppi.local"
 USERNAME = "pi"
 PASSWORD = "sandeep"
 
-image_save_path= './Data/image.jpg'
+image_save_path= './src/Data/image.jpg'
 
 ssh_client =paramiko.SSHClient()
 ssh_client.load_host_keys(KNOWN_HOST_PATH)    # replace this with the user's SSH, replace 'user' with the username of the user's windows account
@@ -35,7 +35,7 @@ ftp_client.close()
 image_path = image_save_path
 
 # Load the pre-trained model
-model = tf.keras.models.load_model('./Data/TrainedModel')
+model = tf.keras.models.load_model('./src/Data/TrainedModel')
 
 def preprocess_image(image_path):
     image = Image.open(image_path)

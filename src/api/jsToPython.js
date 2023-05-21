@@ -1,4 +1,4 @@
-const { exec } = require('child_process');
+var exec  = require('child_process').exec;
 
 // Function to execute the Python program
 export default function runPythonProgram(callback) {
@@ -8,10 +8,6 @@ export default function runPythonProgram(callback) {
       return;
     }
     callback(stdout);
+    console.log(`Output from Python program: ${stdout}`);
   });
 }
-
-// Trigger the Python program and receive the output
-runPythonProgram((output) => {
-  console.log(`Output from Python program: ${output}`);
-});
