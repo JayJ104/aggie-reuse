@@ -3,7 +3,6 @@ import "../CSS/UpdateStock.css"
 import Logo from '../../AggieReuse-additional-color.png';
 import { useNavigate } from "react-router-dom";
 
-
 //add counter, dynamic display
 
 export default function UpdateStock(){
@@ -25,40 +24,35 @@ export default function UpdateStock(){
                         <p className="rd-text">Start Checkout:</p>
                     </div>
                 </div>
-                <div className="u-a">
                     <div className="left-area">
                         <div className="button-row">
-                            <button className="button1" type="button1">Books</button>
-                            <button className="button1" type="button1">Dress</button>
-                            <button className="button1" type="button1">Hat</button>
-                            <button className="button1" type="button1">Household</button>
+                            <button className="button1" name = "Books" type="button">Books</button>
+                            <button className="button1" name = "Dress" type="button">Dress</button>
+                            <button className="button1" name = "Hat" type="button">Hat</button>
+                            <button className="button1" type="button">Household</button>
                             <button className="button1" type="button">Jacket</button>
                             <button className="button1" type="button">Long sleeve/button up</button>
                         </div>
                         <div className="button-row">
-                            <button className="button1" type="button1">Pants/Jeans</button>
-                            <button className="button1" type="button1">Ring/Jewelry</button>
-                            <button className="button1" type="button1">School supplies</button>
-                            <button className="button1" type="button1">Shirts</button>
-                            <button className="button1" type="button1">Shoes</button>
-                            <button className="button1" type="button1">Shorts</button>
+                            <button className="button1" type="button">Pants/Jeans</button>
+                            <button className="button1" type="button">Ring/Jewelry</button>
+                            <button className="button1" type="button">School supplies</button>
+                            <button className="button1" type="button">Shirts</button>
+                            <button className="button1" type="button">Shoes</button>
+                            <button className="button1" type="button">Shorts</button>
                         </div>
                         <div className="button-row">
-                            <button className="button1" type="button1">Skirt</button>
-                            <button className="button1" type="button1">Sunglasses</button>
-                            <button className="button1" type="button1">Sweater</button>
-                            <button className="button1" type="button1">Cardigan</button>
-                            <button className="button1" type="button1">Tank top</button>
-                            <button className="button1" type="button1">Misc</button>
+                            <button className="button1" type="button">Skirt</button>
+                            <button className="button1" type="button">Sunglasses</button>
+                            <button className="button1" type="button">Sweater</button>
+                            <button className="button1" type="button">Cardigan</button>
+                            <button className="button1" type="button">Tank top</button>
+                            <button className="button1" type="button">Misc</button>
                         </div>
                     </div>
-                    <div className="right-area">
-                        <div className="itemList"></div>
-                        <div className="button-container">
+                    <div className="button-container">
                             <button onClick={() => navigate("/")} className="finish" type="button">FINISH</button>
-                            </div>
-                    </div>
-                </div>                
+                    </div>               
             </div>
         </div>
     )

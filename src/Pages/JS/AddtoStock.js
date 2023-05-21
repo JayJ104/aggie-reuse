@@ -35,7 +35,6 @@ export default function Add(){
                         <p className="rd-text">Record Donation:</p>
                     </div>
                 </div>
-                <div className="user-area">
                     <div className="ua-left">
                         <div className="scan">
                             <div className="scan-top">
@@ -62,14 +61,10 @@ export default function Add(){
                             
                         </div>
                     </div>
-                    <div className="ua-right">
-                        <div className="itemList"></div>
-                        <div className="button-container">
+                    <div className="button-container2">
                             <button onClick={() => navigate("/")} className="finish" type="button">FINISH</button>
-                            </div>
                     </div>
                 </div>
-            </div>
             
             </body>
         </div>
