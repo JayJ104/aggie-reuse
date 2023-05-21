@@ -26,7 +26,9 @@ export default function Add(){
                 <div className="user-area">
                     <div className="ua-left">
                         <div className="scan">
-                            <div className="scan-top"><button className="scan-button" type="button">SCAN Item</button></div>
+                            <div className="scan-top">
+                                <button className="scan-button" type="button">SCAN Item</button>
+                            </div>
                             <div className="scan-output">
                                 <p className="scan-text" id="scanned">ITEM SCANNED:</p>
                                 <div className="scan-text"></div>
