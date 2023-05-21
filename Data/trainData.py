@@ -8,7 +8,7 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 # Define the dataset directory path
-dataset_dir = './aggie-reuse/data/TrainingData'
+dataset_dir = './Data/TrainingData'
 
 # Define the batch size for training
 batch_size = 32
@@ -69,7 +69,7 @@ model.fit(
     epochs=10
 )
 
-model.save('./aggie-reuse/TrainedModel')
+model.save('./Data/TrainedModel')
 
 acc = history.history['accuracy']
 val_acc = history.history['val_accuracy']
