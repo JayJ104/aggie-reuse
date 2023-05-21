@@ -1,3 +1,8 @@
+# Inventory Tracking System for Aggie Reuse Store
+A faster and hassle-free inventory tracking system for our lovely folks at Aggie Reuse Store!
+
+## About this Project:
+
 ## Inspiration
 When we went to go thrift-shopping at the Aggie Reuse Store, we noticed how tedious and time-consuming of a process checking-in and checking-out the items out of the store was.  As CS students, we took it upon ourselves to make the process for the volunteers simpler. Our project aims to reduce the time and effort required for manual data entry, help improve accuracy by minimizing human error, and provide real-time visibility into item availability and stock.
 ## What it does
