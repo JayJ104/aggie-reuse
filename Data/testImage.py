@@ -58,4 +58,8 @@ class_list = ["dress","hat", "longsleeve", "outwear", "pants", "shirt", "shoes",
 # Run the image through the model
 predicted_class = predict_image(image_path, model)
 
+<<<<<<< Updated upstream
 print("The shown shirt is", class_list[predicted_class])
+=======
+print("The shown shirt is", class_list[predicted_class])
+>>>>>>> Stashed changes

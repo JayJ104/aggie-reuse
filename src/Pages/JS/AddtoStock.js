@@ -2,6 +2,8 @@ import React from "react";
 import "../CSS/AddtoStock.css"
 import Logo from '../../AggieReuse-additional-color.png'; 
 
+//frontend file-- dynamic display
+//add drop downs
 
 export default function Add(){
     return(
