@@ -1,11 +1,13 @@
+import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras.models import Sequential
-
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+import matplotlib
+import matplotlib.pyplot as plt
 import os
 import numpy as np
-import tensorflow as tf
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
 
 # Define the dataset directory path
 dataset_dir = './Data/TrainingData'

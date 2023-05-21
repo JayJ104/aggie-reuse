@@ -8,7 +8,7 @@ HOSTNAME = "sandeeppi.local"
 USERNAME = "pi"
 PASSWORD = "sandeep"
 
-image_path= './aggie-reuse/image.jpg'
+image_path= './Data/image.jpg'
 
 ssh_client =paramiko.SSHClient()
 ssh_client.load_host_keys(KNOWN_HOST_PATH)    # replace this with the user's SSH, replace 'user' with the username of the user's windows account
@@ -27,7 +27,7 @@ ftp_client.close()
 
 
 # Load the pre-trained model
-model = tf.keras.models.load_model('./aggie-reuse/TrainedModel')
+model = tf.keras.models.load_model('./Data/TrainedModel')
 
 # Load the image you want to test
 image = Image.open(image_path)
