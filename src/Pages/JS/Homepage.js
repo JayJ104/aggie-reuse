@@ -20,10 +20,10 @@ export default function Homepage(){
                 </div>
             </div>
             <div className="home-body">
-                <button className="button" type="button">Record Donation
-                </button>
-                <button className="button" type="button">Start Checkout</button>
+                <button onClick = {() => navigate("/record-donation")} className="button">Record Donation</button>
+                <button onClick = {() => navigate("/checkout")} className="button">Start Checkout</button>
             </div>
         </div>
     )
 }
+
